@@ -1,23 +1,43 @@
 @extends('layouts.app')
 
-<main>
-    @section('content')
-        <div class="bg-primary">
-            <div class="container">
-                <div class="row">
-                    @foreach (config('partialsdb.mainLinks') as $link)
-                        <div class="col py-md-3 py-0 pe-3 d-flex align-items-center">
-                            <div class="rem-3 pe-2"><img class="img-fluid" src={{ $link['image'] }} alt="digital"></div>
-                            <div>
-                                <a href="#">
-                                    <h6 class="text-uppercase text-white">{{ $link['text'] }}</h6>
-                                </a>
-                            </div>
+
+@section('content')
+    <div class="wrapper ">
+        <div class="hero position-relative">
+            <img src="/images/jumbotron.jpg" alt="hero">
+            <button class="text-uppercase fw-bold fs-5 btn btn-primary rounded-0">Current Series</button>
+        </div>
+        <div class="bg-black">
+            <div class="container  h-100 text-white">
+                <div class="row mx-auto">
+                    {{-- <CardComponent :image="card.thumb" :title="card.series" v-for="card in cards" /> --}}
+                    @foreach ($comics as $comic)
+                    <div class="col-12 col-md-4 col-lg-2 text-center">
+                        <img class="my-card-img" src="{{ $comic['thumb']}}" alt="{{ $comic['title']}}">
+                        <div class="text-uppercase small py-2">
+                            {{ $comic['title']}}
                         </div>
-                    @endforeach
-                </div>
+                    </div>
+                @endforeach
+            </div>
+                <button class="text-uppercase mx-auto d-block btn btn-primary rounded-0">Load More</button>
             </div>
         </div>
-    @endsection
-
-</main>
+    </div>
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+                @foreach (config('partialsdb.mainLinks') as $link)
+                    <div class="col py-md-3 py-0 pe-3 d-flex align-items-center">
+                        <div class="rem-3 pe-2"><img class="img-fluid" src={{ $link['image'] }} alt="digital"></div>
+                        <div>
+                            <a href="#">
+                                <h6 class="text-uppercase text-white">{{ $link['text'] }}</h6>
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+@endsection

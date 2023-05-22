@@ -33,6 +33,39 @@ header {
         }
     }
 }
+//Main Homepaige
+.wrapper{
+    height: calc(100vh - (20vh + 90px + 55px + 90px));
+
+    .hero {
+        width: 100%;
+        height: 20vh;
+        img {
+            display: block;
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    button.fs-5{
+        // transform: translate(0, -50%);
+        position: absolute;
+        bottom: -5%;
+        left: 3%;
+        z-index: 100;
+    }
+    .bg-black{
+        padding-top: 3rem;
+        height: calc(100% - 20vh);
+        overflow-y: auto;
+    }
+    .my-card-img{
+            width: 10rem;
+            height: 10rem;
+            text-align: center;
+    }
+}
 
 //BottomMain
 .rem-3{
