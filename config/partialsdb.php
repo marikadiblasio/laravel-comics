@@ -3,15 +3,15 @@ return [
     'navLinks' =>  ['character', 'comics', 'movies', 'tv', 'games', 'collectibles','videos', 'fans', 'news', 'shop'],
     'mainLinks' => [
         [
-            'image'=> 'public/images/buy-comics-digital-comics.png',
+            'image'=> '/public/images/buy-comics-digital-comics.png',
             'text'=> 'digital comics'
         ],
         [
-            'image'=> '/images/buy-comics-merchandise.png',
+            'image'=> '/public/images/buy-comics-merchandise.png',
             'text'=> 'dc merchandise'
         ],
         [
-            'image'=> '/images/buy-comics-subscriptions.png',
+            'image'=> public_path('buy-comics-subscriptions.png'),
             'text'=> 'subscription'
         ],
         [

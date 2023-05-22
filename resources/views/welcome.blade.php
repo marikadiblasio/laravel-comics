@@ -8,12 +8,9 @@
                         <section class="container">
                         questo nel layout è il main
                         </section>
+                    @endsection
                 </div>
             </div>
 
         </div>
     </main>
-
-</body>
-
-</html>
