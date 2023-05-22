@@ -3,15 +3,15 @@ return [
     'navLinks' =>  ['character', 'comics', 'movies', 'tv', 'games', 'collectibles','videos', 'fans', 'news', 'shop'],
     'mainLinks' => [
         [
-            'image'=> '/public/images/buy-comics-digital-comics.png',
+            'image'=> '/images/buy-comics-digital-comics.png',
             'text'=> 'digital comics'
         ],
         [
-            'image'=> '/public/images/buy-comics-merchandise.png',
+            'image'=> '/images/buy-comics-merchandise.png',
             'text'=> 'dc merchandise'
         ],
         [
-            'image'=> public_path('buy-comics-subscriptions.png'),
+            'image'=> '/images/buy-comics-subscriptions.png',
             'text'=> 'subscription'
         ],
         [
@@ -22,5 +22,53 @@ return [
             'image'=> '/images/buy-dc-power-visa.svg',
             'text'=> 'dc power visa'
         ],
-    ]
+    ],
+
+    'footerlinks' => [
+        [
+            'title'=> 'DC COMICS',
+            'topics'=> [
+                'Characters',
+                'Comics',
+                'Movies',
+                'TV',
+                'Games',
+                'Video',
+                'News'
+            ]
+        ],
+        [
+            'title'=> 'SHOP',
+            'topics'=> [
+                'Shop DC',
+                'Shop DC Collectibles'
+            ]
+        ],
+        [
+            'title'=> 'DC',
+            'topics'=> [
+                'Term Of Use',
+                'Privacy policy (New)',
+                'Ad Choices',
+                'Advertising',
+                'Jobs',
+                'Subscriptions',
+                'Talent Workshop',
+                'CPSC Certificates',
+                'Ratings',
+                'Shop Helps',
+                'Contact Us'
+            ]
+        ],
+        [
+            'title'=> 'SITES',
+            'topics'=> [
+                'DC',
+                'MAD Magazines',
+                'DC Kids',
+                'DC Universe',
+                'DC Power Visa'
+            ]
+        ]
+       ]
 ];

@@ -8,11 +8,8 @@ $fa-font-path: "../fonts/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 
-.rem-3{
-    width: 3rem;
-    cursor: pointer;
-}
 
+//Header
 header {
     .container{
         height: 90px;
@@ -35,4 +32,37 @@ header {
         color: #0d6efd;
         }
     }
+}
+
+//BottomMain
+.rem-3{
+    width: 3rem;
+    cursor: pointer;
+}
+
+// Footer
+
+footer {
+    background-image: url('/images/footer-bg.jpg');
+    height: 20vh;
+    overflow: hidden;
+.w25{
+    width: 25%;
+}
+img {
+    object-position: center -50px;
+    width: 100%;
+}
+footer {
+    background-image: url('../assets/img/footer-bg.jpg');
+    height: 20vh;
+    overflow: hidden;
+}
+.w25{
+    width: 25%;
+}
+img {
+    object-position: center -50px;
+    width: 100%;
+}
 }
