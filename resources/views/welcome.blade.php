@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-12">
                     @section('content')
-    <section class="container">
-        <h1>La Molisana</h1>
-    </section>
+                        <section class="container">
+                        questo nel layout è il main
+                        </section>
                 </div>
             </div>
 

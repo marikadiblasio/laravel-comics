@@ -6,3 +6,33 @@ $fa-font-path: "../fonts/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
+
+
+.rem-3{
+    width: 3rem;
+    cursor: pointer;
+}
+
+header {
+    .container{
+        height: 90px;
+    }
+    .container>div{
+        height: 80px;
+        width: 80px;
+    }
+    ul a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        height: 90px;
+        display: inline-block;
+        line-height: 90px;
+        border-bottom: 2px solid transparent;
+
+        &:hover{
+        border-bottom: 2px solid #0d6efd;
+        color: #0d6efd;
+        }
+    }
+}
